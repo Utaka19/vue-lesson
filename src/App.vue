@@ -1,9 +1,11 @@
 <script setup>
+import { ref } from 'vue'
 const title = 'Vue.jd Course'
-let price = 9.99
+let price = ref(9.99)
+console.log(price.value)
 function increment() {
-    price++
-    console.log(price)
+  price.value++
+  console.log(price.value)
 }
 </script>
 <template>
